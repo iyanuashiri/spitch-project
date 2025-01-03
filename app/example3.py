@@ -18,7 +18,7 @@ headers = {
 }
 
 
-with open('/home/iyanuashiri/Software/Python/spitch-project/app/audio.wav', 'rb') as f:
+with open('app/audio5.wav', 'rb') as f:
     files = {"content": f}
     response = requests.post(url, data=payload, files=files, headers=headers)
     print(response.json())
@@ -30,3 +30,5 @@ with open('/home/iyanuashiri/Software/Python/spitch-project/app/audio.wav', 'rb'
 # {'request_id': 'a40fa5f4-7f00-4e1a-8795-e1f171826db3', 'text': 'Báwo ni olólùfẹ́? Ìfẹ́ Olúwa bí mi Olúwa ìyànwó Olúwa?'}
 
 # {'request_id': 'a7690c28-1966-4072-8c69-ff984ab07447', 'text': 'Báwo ni olólùfẹ́?'}
+
+# {'request_id': '922edc50-d2d0-4c65-bd17-7dd9e460adf8', 'text': 'Báwo ni olólùfẹ́, ìfẹ́ Olúwa, bí mi Olúwa, ìyàn mú Olúwa, ìfẹ́ Olúwa?'}
